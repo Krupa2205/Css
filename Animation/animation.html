@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .circle
+            {
+                width: 100px;
+                height: 100px;
+                background: lightskyblue;
+                transition: width 2s, height 2s,border-radius, background 4s;
+            }
+
+            .circle:hover
+            {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background: fuchsia;
+            }
+
+            .square
+            {
+                width:150px;
+                height: 100px;
+                background: purple;
+                transition: width 2s,height 2s, border-radius,background 2s;
+            }
+
+            .square:hover
+            {
+              width:320px;
+              height: 320px;   
+              border-radius: 50%;
+              background: silver;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="circle"></div><br><br>
+        <div class="square"></div>
+    </body>
+</html>
