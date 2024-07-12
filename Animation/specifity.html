@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity</title>
+    <link rel="stylesheet" href="specifity.css">
+    <style>
+        .favourite
+        {
+            color: crimson;
+            font-weight: bold;
+        }
+
+        ul#summer-drinks li
+        {
+            font-size: 12px;
+            color: black;
+            font-weight: normal;
+        }
+        .favourite
+        {
+            color: blue;
+        }
+
+        .favourite
+        {
+            color: chocolate;
+        }
+        /* Isme kya hua 3 bar humne .favourite likha 2 bar yaha per and 1 bar
+        css file me to 2nd vali chocolate css apply hui kyunki link tag upar hein to 
+        vo same hi rahenga agar hum niche le le usko to vo nahi hoga dusra apply hoga*/
+        
+        /* As you see specifity means when you click on the .favourite at that time there
+        is one box an in the box there is a specifity detail like specifity(1,0,2) so jisme 
+        jyada specifity hogi vo chhose hoga first.... and after second vala 
+        apply nahi honga jis time hum same selector me apply karenge tabhi..*/
+        /* Agar hamne 2 bar .favourite class me diffrent color de diye like 
+        .favourite
+        {
+            color:red;
+        }
+        .favourite
+        {
+            color:pink;
+        } to last vala hi aplly honga*/
+    </style>
+</head>
+<body>
+    <ul id="summer-drinks"></ul>
+    <li>Magno</li>
+    <li class="favourite">mazza</li>
+    <li>Fizz</li>
+</body>
+</html>
